@@ -15,4 +15,4 @@ public interface IstacksFactory {
 	public StackHanoi GetHanoiStack();
 
 }
-//źle sformatowane wiersze : 7-17
+// źle sformatowane wiersze : 7-17

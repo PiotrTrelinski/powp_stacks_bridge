@@ -2,7 +2,7 @@ package edu.kis.vh.stacks;
 
 public class StackHanoi extends stack {
 
-int totalRejected = 0;
+	int totalRejected = 0;
 
 	public int reportRejected() {
 		return totalRejected;
@@ -15,4 +15,4 @@ int totalRejected = 0;
 			super.push(in);
 	}
 }
-//źle sformatowane wiersze : 8, 12-13
+// źle sformatowane wiersze : 8, 12-13 ; 5 pominąłem
