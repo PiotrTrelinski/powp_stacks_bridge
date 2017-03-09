@@ -3,8 +3,8 @@ package edu.kis.vh.stacks.list;
 public class StackList {
 
 	private static final int EMPTY = -1;
-	Node last;
-	int i;
+	private Node last;
+	public int i;
 
 	public void pushElement(int i) {
 		if (last == null)
@@ -16,7 +16,7 @@ public class StackList {
 		}
 	}
 
-	public boolean empty() {
+	private boolean empty() {
 		return last == null;
 	}
 
