@@ -32,3 +32,4 @@ class StacksDemo {
 
 }
 // źle sformatowane wiersze 19-27 ; 13 i 31 pominąłem
+// alt + strzałki w lewo i w prawo przeskakują między plikami, czasami w obrębie pliku
