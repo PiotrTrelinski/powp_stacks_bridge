@@ -1,6 +1,6 @@
 package edu.kis.vh.stacks.list;
 
-public class Node {
+final class Node {
 
 	private int value;
 	private Node prev;
