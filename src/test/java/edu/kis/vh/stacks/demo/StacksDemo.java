@@ -4,11 +4,30 @@ import edu.kis.vh.stacks.StackHanoi;
 import edu.kis.vh.stacks.Stack;
 import edu.kis.vh.stacks.factory.DefaultStacksFactory;
 
+/**
+ * @author -
+ *	Klasa testująca/prezentująca działanie stosów
+ */
+/**
+ * @author -
+ *
+ */
 class StacksDemo {
 
+	/**
+	 * pole MESSAGE, ustawione jako stała, używane w metodzie testStacks do wyświetlania wiadomości 
+	 */
 	private static final String MESSAGE = "total rejected is ";
+	
+	/**
+	 * stała wielkość stosu
+	 */
 	private static final int SIZE = 15;
 
+	/**
+	 * @param args
+	 * inicjalizacja DefaultStacksFactory i przekazanie obiektu do metody testStacks
+	 */
 	public static void main(String[] args) {
 		DefaultStacksFactory factory = new DefaultStacksFactory();
 
@@ -16,6 +35,10 @@ class StacksDemo {
 
 	}
 
+	/**
+	 * @param factory
+	 * metoda przyjmująca DefaultStacksFactory jako argument, jej zadaniem jest prestestowanie/prezentacja stosów
+	 */
 	private static void testStacks(DefaultStacksFactory factory) {
 		Stack[] stacks = { factory.getStandardStack(), factory.getFalseStack(), factory.getFIFOStack(),
 				factory.getHanoiStack() };
