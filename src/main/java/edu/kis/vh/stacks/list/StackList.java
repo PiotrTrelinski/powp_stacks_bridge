@@ -4,15 +4,15 @@ public class StackList {
 
 	private static final int EMPTY = -1;
 	private Node last;
-	public int i;
+	private int i;
 
 	public void pushElement(int i) {
 		if (last == null)
 			last = new Node(i);
 		else {
-			last.next = new Node(i);
-			last.next.prev = last;
-			last = last.next;
+			last.setNext(new Node(i));
+			last.getNext().setPrev(last);
+			last = last.getNext();
 		}
 	}
 
@@ -27,15 +27,24 @@ public class StackList {
 	public int peek() {
 		if (empty())
 			return EMPTY;
-		return last.value;
+		return last.getValue();
 	}
 
 	public int pop() {
 		if (empty())
 			return EMPTY;
-		int ret = last.value;
-		last = last.prev;
+		int ret = last.getValue();
+		last = last.getPrev();
 		return ret;
 	}
 
+	public int getI() {
+		return i;
+	}
+
+	public void setI(int i) {
+		this.i = i;
+	}
+
 }
+//żadnych zmian
