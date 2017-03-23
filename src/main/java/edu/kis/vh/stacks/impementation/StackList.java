@@ -1,5 +1,7 @@
 package edu.kis.vh.stacks.impementation;
 
+import edu.kis.vh.stacks.factory.IStack;
+
 class Node {
 
 	public int value;
@@ -14,7 +16,6 @@ class Node {
 
 public class StackList implements IStack {
 
-	private static final int EMPTY = -1;
 	private Node last;
 
 	/* (non-Javadoc)
@@ -53,7 +54,7 @@ public class StackList implements IStack {
 	@Override
 	public int peek() {
 		if (empty())
-			return EMPTY;
+			return IStack.EMPTY;
 		return last.value;
 	}
 
@@ -63,7 +64,7 @@ public class StackList implements IStack {
 	@Override
 	public int pop() {
 		if (empty())
-			return EMPTY;
+			return IStack.EMPTY;
 		int ret = last.value;
 		last = last.prev;
 		return ret;

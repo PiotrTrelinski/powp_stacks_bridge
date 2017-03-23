@@ -1,6 +1,6 @@
 package edu.kis.vh.stacks;
 
-import edu.kis.vh.stacks.impementation.IStack;
+import edu.kis.vh.stacks.factory.IStack;
 
 public class Stack {
 	private IStack stack;
@@ -11,16 +11,16 @@ public class Stack {
 		this.stack = stack;
 	}
 
-	public void push(int i) {
+	public void pushElement(int i) {
 		stack.pushElement(i);
 	}
-	public boolean isEmpty() {
+	public boolean empty() {
 		return stack.empty();
 	}
-	public boolean isFull() {
+	public boolean full() {
 		return stack.full();
 	}
-	public int top() {
+	public int peek() {
 		return stack.peek();
 	}
 	public int pop() {

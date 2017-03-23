@@ -1,10 +1,10 @@
 package edu.kis.vh.stacks.impementation;
 
+import edu.kis.vh.stacks.factory.IStack;
+
 public class StackArray implements IStack {
 
 	private static final int FULL = 11;
-
-	private static final int EMPTY = -1;
 
 	private static final int SIZE = 12;
 
