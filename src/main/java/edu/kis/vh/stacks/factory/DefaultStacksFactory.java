@@ -1,11 +1,11 @@
 package edu.kis.vh.stacks.factory;
 
-import edu.kis.vh.stacks.factory.StacksFactory;
+import edu.kis.vh.stacks.factory.IStacksFactory;
 import edu.kis.vh.stacks.StackArray;
 import edu.kis.vh.stacks.StackFIFO;
 import edu.kis.vh.stacks.StackHanoi;
 
-public class DefaultStacksFactory implements StacksFactory {
+public class DefaultStacksFactory implements IStacksFactory {
 
 	@Override
 	public StackArray getStandardStack() {

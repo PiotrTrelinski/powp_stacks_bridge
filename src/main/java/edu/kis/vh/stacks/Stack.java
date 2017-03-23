@@ -1,12 +1,12 @@
 package edu.kis.vh.stacks;
 
-import edu.kis.vh.stacks.list.StackList;
+import edu.kis.vh.stacks.list.IStack;
 
 public class Stack {
-	private StackList stack;
+	private IStack stack;
 	public Stack(){
 	}
-	public Stack(StackList stack) {
+	public Stack(IStack stack) {
 		super();
 		this.stack = stack;
 	}
@@ -27,4 +27,3 @@ public class Stack {
 		return stack.pop();
 	}
 }
-//nie użyłem żadnej, ale Refactor -> Rename i Navigate -> Open Declaration

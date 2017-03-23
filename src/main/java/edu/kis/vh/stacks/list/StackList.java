@@ -12,11 +12,15 @@ class Node {
 
 }
 
-public class StackList {
+public class StackList implements IStack {
 
 	private static final int EMPTY = -1;
 	private Node last;
 
+	/* (non-Javadoc)
+	 * @see edu.kis.vh.stacks.list.IStack#pushElement(int)
+	 */
+	@Override
 	public void pushElement(int i) {
 		if (last == null)
 			last = new Node(i);
@@ -27,20 +31,36 @@ public class StackList {
 		}
 	}
 
+	/* (non-Javadoc)
+	 * @see edu.kis.vh.stacks.list.IStack#empty()
+	 */
+	@Override
 	public boolean empty() {
 		return last == null;
 	}
 
+	/* (non-Javadoc)
+	 * @see edu.kis.vh.stacks.list.IStack#full()
+	 */
+	@Override
 	public boolean full() {
 		return false;
 	}
 
+	/* (non-Javadoc)
+	 * @see edu.kis.vh.stacks.list.IStack#peek()
+	 */
+	@Override
 	public int peek() {
 		if (empty())
 			return EMPTY;
 		return last.value;
 	}
 
+	/* (non-Javadoc)
+	 * @see edu.kis.vh.stacks.list.IStack#pop()
+	 */
+	@Override
 	public int pop() {
 		if (empty())
 			return EMPTY;
