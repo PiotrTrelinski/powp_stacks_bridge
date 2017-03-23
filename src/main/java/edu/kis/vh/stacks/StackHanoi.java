@@ -8,10 +8,10 @@ public class StackHanoi extends StackArray {
 		return totalRejected;
 	}
 
-	public void push(int in) {
-		if (!isEmpty() && in > top())
+	public void pushElement(int in) {
+		if (!empty() && in > peek())
 			totalRejected++;
 		else
-			super.push(in);
+			super.pushElement(in);
 	}
 }

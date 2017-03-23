@@ -6,13 +6,13 @@ public class StackFIFO extends StackArray {
 
 	@Override
 	public int pop() {
-		while (!isEmpty())
-			temp.push(super.pop());
+		while (!empty())
+			temp.pushElement(super.pop());
 
 		int ret = temp.pop();
 
-		while (!temp.isEmpty())
-			push(temp.pop());
+		while (!temp.empty())
+			pushElement(temp.pop());
 
 		return ret;
 	}

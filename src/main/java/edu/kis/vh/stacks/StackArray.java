@@ -1,6 +1,8 @@
 package edu.kis.vh.stacks;
 
-public class StackArray {
+import edu.kis.vh.stacks.list.IStack;
+
+public class StackArray implements IStack {
 
 	private static final int FULL = 11;
 
@@ -16,27 +18,27 @@ public class StackArray {
 		return total;
 	}
 
-	public void push(int i) {
-		if (!isFull())
+	public void pushElement(int i) {
+		if (!full())
 			items[++total] = i;
 	}
 
-	public boolean isEmpty() {
+	public boolean empty() {
 		return total == EMPTY;
 	}
 
-	public boolean isFull() {
+	public boolean full() {
 		return total == FULL;
 	}
 
-	public int top() {
-		if (isEmpty())
+	public int peek() {
+		if (empty())
 			return EMPTY;
 		return items[total];
 	}
 
 	public int pop() {
-		if (isEmpty())
+		if (empty())
 			return EMPTY;
 		return items[total--];
 	}

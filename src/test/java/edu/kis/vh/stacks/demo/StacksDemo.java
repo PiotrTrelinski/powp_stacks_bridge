@@ -45,14 +45,14 @@ class StacksDemo {
 
 		for (int i = 1; i < SIZE; i++)
 			for (int j = 0; j < 3; j++)
-				stacks[j].push(i);
+				stacks[j].pushElement(i);
 
 		java.util.Random rn = new java.util.Random();
 		for (int i = 1; i < SIZE; i++)
-			stacks[3].push(rn.nextInt(20));
+			stacks[3].pushElement(rn.nextInt(20));
 
 		for (int i = 0; i < stacks.length; i++) {
-			while (!stacks[i].isEmpty())
+			while (!stacks[i].empty())
 				System.out.print(stacks[i].pop() + "  ");
 			System.out.println();
 		}

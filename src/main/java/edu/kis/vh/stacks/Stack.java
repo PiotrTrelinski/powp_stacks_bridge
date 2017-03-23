@@ -27,3 +27,5 @@ public class Stack {
 		return stack.pop();
 	}
 }
+// Refactor -> Rename , Navigate -> Open Declaration
+//
