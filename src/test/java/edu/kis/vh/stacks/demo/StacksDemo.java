@@ -1,7 +1,7 @@
 package edu.kis.vh.stacks.demo;
 
 import edu.kis.vh.stacks.StackHanoi;
-import edu.kis.vh.stacks.Stack;
+import edu.kis.vh.stacks.StackArray;
 import edu.kis.vh.stacks.factory.DefaultStacksFactory;
 
 /**
@@ -40,7 +40,7 @@ class StacksDemo {
 	 * metoda przyjmująca DefaultStacksFactory jako argument, jej zadaniem jest prestestowanie/prezentacja stosów
 	 */
 	private static void testStacks(DefaultStacksFactory factory) {
-		Stack[] stacks = { factory.getStandardStack(), factory.getFalseStack(), factory.getFIFOStack(),
+		StackArray[] stacks = { factory.getStandardStack(), factory.getFalseStack(), factory.getFIFOStack(),
 				factory.getHanoiStack() };
 
 		for (int i = 1; i < SIZE; i++)
@@ -61,5 +61,3 @@ class StacksDemo {
 	}
 
 }
-// źle sformatowane wiersze 19-27 ; 13 i 31 pominąłem
-// alt + strzałki w lewo i w prawo przeskakują między plikami, czasami w obrębie pliku

@@ -1,8 +1,8 @@
 package edu.kis.vh.stacks;
 
-public class StackFIFO extends Stack {
+public class StackFIFO extends StackArray {
 
-	private Stack temp = new Stack();
+	private StackArray temp = new StackArray();
 
 	@Override
 	public int pop() {
@@ -17,4 +17,3 @@ public class StackFIFO extends Stack {
 		return ret;
 	}
 }
-// źle sformatowane wiersze 10-12, 14-16
