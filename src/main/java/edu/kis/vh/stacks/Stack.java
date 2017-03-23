@@ -42,4 +42,3 @@ public class Stack {
 	}
 
 }
-// źle sformatowane wiersze 14-32 ; 11 pominąłem
