@@ -3,7 +3,7 @@ package edu.kis.vh.stacks.unittests;
 import org.junit.Assert;
 import org.junit.Test;
 
-import edu.kis.vh.stacks.list.StackArray;
+import edu.kis.vh.stacks.impementation.StackArray;
 
 public class StackTest {
 	

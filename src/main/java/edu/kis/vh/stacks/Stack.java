@@ -1,6 +1,6 @@
 package edu.kis.vh.stacks;
 
-import edu.kis.vh.stacks.list.IStack;
+import edu.kis.vh.stacks.impementation.IStack;
 
 public class Stack {
 	private IStack stack;
