@@ -1,29 +1,30 @@
 package edu.kis.vh.stacks;
 
+import edu.kis.vh.stacks.list.StackList;
+
 public class Stack {
-	private StackArray stack;
+	private StackList stack;
 	public Stack(){
 	}
-	public int getTotal() {
-		return stack.getTotal();
+	public Stack(StackList stack) {
+		super();
+		this.stack = stack;
 	}
+
 	public void push(int i) {
-		stack.push(i);
+		stack.pushElement(i);
 	}
 	public boolean isEmpty() {
-		return stack.isEmpty();
+		return stack.empty();
 	}
 	public boolean isFull() {
-		return stack.isFull();
+		return stack.full();
 	}
 	public int top() {
-		return stack.top();
+		return stack.peek();
 	}
 	public int pop() {
 		return stack.pop();
 	}
-	public Stack(StackArray stack) {
-		super();
-		this.stack = stack;
-	}
 }
+//nie użyłem żadnej, ale Refactor -> Rename i Navigate -> Open Declaration
