@@ -1,8 +1,8 @@
 package edu.kis.vh.stacks.factory;
 
-import edu.kis.vh.stacks.StackArray;
 import edu.kis.vh.stacks.StackFIFO;
 import edu.kis.vh.stacks.StackHanoi;
+import edu.kis.vh.stacks.list.StackArray;
 
 abstract interface IStacksFactory {
 

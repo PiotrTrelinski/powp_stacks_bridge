@@ -1,6 +1,4 @@
-package edu.kis.vh.stacks;
-
-import edu.kis.vh.stacks.list.IStack;
+package edu.kis.vh.stacks.list;
 
 public class StackArray implements IStack {
 

@@ -1,7 +1,7 @@
 package edu.kis.vh.stacks.factory;
 
 import edu.kis.vh.stacks.factory.IStacksFactory;
-import edu.kis.vh.stacks.StackArray;
+import edu.kis.vh.stacks.list.StackArray;
 import edu.kis.vh.stacks.StackFIFO;
 import edu.kis.vh.stacks.StackHanoi;
 
