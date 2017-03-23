@@ -2,6 +2,8 @@ package edu.kis.vh.stacks;
 
 public class Stack {
 
+	private static final int FULL = 11;
+
 	private static final int EMPTY = -1;
 
 	private static final int SIZE = 12;
@@ -24,7 +26,7 @@ public class Stack {
 	}
 
 	public boolean isFull() {
-		return total == 11;
+		return total == FULL;
 	}
 
 	public int top() {
