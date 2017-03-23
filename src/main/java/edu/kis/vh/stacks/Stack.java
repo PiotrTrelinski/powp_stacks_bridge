@@ -28,4 +28,4 @@ public class Stack {
 	}
 }
 // Refactor -> Rename , Navigate -> Open Declaration
-//
+// Można wymiennie stosować StackList i StackArray w ramach interfejsu 
