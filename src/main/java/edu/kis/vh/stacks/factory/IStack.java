@@ -2,7 +2,7 @@ package edu.kis.vh.stacks.factory;
 
 public interface IStack {
 
-	int EMPTY = -1;
+	int EMPTY = 0;
 
 	void pushElement(int i);
 
@@ -15,3 +15,5 @@ public interface IStack {
 	int pop();
 
 }
+
+//Wydzielenie stałej pomogło, wystarczyło w tym miejsu zmienić
