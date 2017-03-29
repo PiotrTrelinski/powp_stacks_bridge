@@ -29,3 +29,4 @@ public class Stack {
 }
 // Refactor -> Rename , Navigate -> Open Declaration
 // Można wymiennie stosować StackList i StackArray w ramach interfejsu 
+// F3 przenosi nas do interfejsu, CTRL+mysz pozwala wybrać czy chcemy przenieść się do deklaracji czy do implementacji
