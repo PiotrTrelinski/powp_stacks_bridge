@@ -4,6 +4,11 @@ import edu.kis.vh.stacks.impementation.StackArray;
 
 public class StackFIFO extends StackArray {
 
+	public StackFIFO() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	private StackArray temp = new StackArray();
 
 	@Override
