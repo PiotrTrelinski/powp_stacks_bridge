@@ -1,5 +1,6 @@
 package edu.kis.vh.stacks;
 
+import edu.kis.vh.stacks.impementation.StackList;
 
 public class StackFIFO extends Stack {
 
@@ -8,7 +9,7 @@ public class StackFIFO extends Stack {
 		// TODO Auto-generated constructor stub
 	}
 
-	private Stack temp = new Stack();
+	private StackList temp = new StackList();
 
 	@Override
 	public int pop() {
@@ -23,3 +24,4 @@ public class StackFIFO extends Stack {
 		return ret;
 	}
 }
+//będzie to wydajniejsze gdyż lista nie ma ograniczeń tablicy
