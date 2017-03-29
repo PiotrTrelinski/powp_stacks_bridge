@@ -1,15 +1,19 @@
 package edu.kis.vh.stacks;
 
+import edu.kis.vh.stacks.factory.IStack;
 import edu.kis.vh.stacks.impementation.StackList;
 
 public class StackFIFO extends Stack {
 
+	private IStack temp = new StackList();
 	public StackFIFO() {
 		super();
-		// TODO Auto-generated constructor stub
+	}
+	public StackFIFO(IStack stack) {
+		super(stack);
+		temp = stack;
 	}
 
-	private StackList temp = new StackList();
 
 	@Override
 	public int pop() {
