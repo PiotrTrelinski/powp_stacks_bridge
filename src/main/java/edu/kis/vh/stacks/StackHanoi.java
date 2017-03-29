@@ -2,7 +2,7 @@ package edu.kis.vh.stacks;
 
 import edu.kis.vh.stacks.impementation.StackArray;
 
-public class StackHanoi extends StackArray {
+public class StackHanoi extends Stack {
 
 	public StackHanoi() {
 		super();

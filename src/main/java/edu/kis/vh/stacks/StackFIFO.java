@@ -1,15 +1,14 @@
 package edu.kis.vh.stacks;
 
-import edu.kis.vh.stacks.impementation.StackArray;
 
-public class StackFIFO extends StackArray {
+public class StackFIFO extends Stack {
 
 	public StackFIFO() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	private StackArray temp = new StackArray();
+	private Stack temp = new Stack();
 
 	@Override
 	public int pop() {

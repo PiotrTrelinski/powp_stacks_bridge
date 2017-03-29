@@ -1,10 +1,12 @@
 package edu.kis.vh.stacks;
 
 import edu.kis.vh.stacks.factory.IStack;
+import edu.kis.vh.stacks.impementation.StackList;
 
 public class Stack {
 	private IStack stack;
 	public Stack(){
+		stack = new StackList();
 	}
 	public Stack(IStack stack) {
 		super();

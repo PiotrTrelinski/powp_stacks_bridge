@@ -1,5 +1,6 @@
 package edu.kis.vh.stacks.demo;
 
+import edu.kis.vh.stacks.Stack;
 import edu.kis.vh.stacks.StackHanoi;
 import edu.kis.vh.stacks.factory.DefaultStacksFactory;
 import edu.kis.vh.stacks.impementation.StackArray;
@@ -40,7 +41,7 @@ class StacksDemo {
 	 * metoda przyjmująca DefaultStacksFactory jako argument, jej zadaniem jest prestestowanie/prezentacja stosów
 	 */
 	private static void testStacks(DefaultStacksFactory factory) {
-		StackArray[] stacks = { factory.getStandardStack(), factory.getFalseStack(), factory.getFIFOStack(),
+		Stack[] stacks = { factory.getStandardStack(), factory.getFalseStack(), factory.getFIFOStack(),
 				factory.getHanoiStack() };
 
 		for (int i = 1; i < SIZE; i++)
