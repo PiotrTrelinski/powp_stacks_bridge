@@ -11,7 +11,7 @@ public class StackTest {
 	
 	@Test
 	public void testPush() {
-		Stack stackObj = new Stack(new StackArray());
+		Stack stackObj = new Stack();
 		int testValue = 4;
 		stackObj.pushElement(testValue);
 		
@@ -21,7 +21,7 @@ public class StackTest {
 
 	@Test
 	public void testIsEmpty() {
-		Stack stackObj = new Stack(new StackArray());
+		Stack stackObj = new Stack();
 		boolean result = stackObj.empty();		
 		Assert.assertEquals(true, result);
 		
@@ -32,22 +32,8 @@ public class StackTest {
 	}
 
 	@Test
-	public void testIsFull() {
-		Stack stackObj = new Stack(new StackArray());
-		final int STACK_CAPACITY = 12;
-		for (int i = 0; i < STACK_CAPACITY - 1; i++) {
-			boolean result = stackObj.full();		
-			Assert.assertEquals(false, result);
-			stackObj.pushElement(888);
-		}
-		
-		boolean result = stackObj.full();
-		Assert.assertEquals(true, result);
-	}
-
-	@Test
 	public void testTop() {
-		Stack stackObj = new Stack(new StackArray());
+		Stack stackObj = new Stack();
 		final int EMPTY_STACK_VALUE = IStack.EMPTY;
 		
 		int result = stackObj.peek();
@@ -64,7 +50,7 @@ public class StackTest {
 
 	@Test
 	public void testPop() {
-		Stack stackObj = new Stack(new StackArray());
+		Stack stackObj = new Stack();
 		final int EMPTY_STACK_VALUE = IStack.EMPTY;
 		
 		int result = stackObj.pop();
@@ -80,3 +66,4 @@ public class StackTest {
 	}
 
 }
+//Usunięty testIsFull, Lista nie może być pełna
